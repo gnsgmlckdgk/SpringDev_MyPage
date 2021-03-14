@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 이곳에 DB작업에 필요한 SQL문들을 정의한다. -->
+<!-- MyBatis 형태로 -->
+
+<!-- namespace는 이름 -->
+<mapper namespace="home.test">
+
+	<!-- 회원정보 조회 -->
+	<select id="getmember" parameterType="com.mypage.common.dto.MemberDTO" resultType="com.mypage.common.dto.MemberDTO">
+		SELECT SEQ_NO			AS seq_no
+		     , ID				AS id
+		     , PASSWORD		    AS password
+		     , CREATE_DATE		AS create_date
+		     , CREATE_USER		AS create_user
+		     , UPDATE_DATE		AS update_date
+		     , UPDATE_USER	    AS update_user
+		 FROM MEMBER
+	</select>
+	
+</mapper>

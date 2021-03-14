@@ -16,7 +16,7 @@ local.properties
 .target/
 
 # ignore properties file
-# config.properties
+config.properties
 
 # External tool builders
 .externalToolBuilders/

@@ -21,8 +21,8 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.spring.hch" />
-	
-	
+	<context:component-scan base-package="com.mypage.controller" />
+	<context:component-scan base-package="com.mypage.service" />
+	<context:component-scan base-package="com.mypage.dao" />
 	
 </beans:beans>
